@@ -1,7 +1,10 @@
 public class Problem7{
 
      public static void main(String []args){
+        long start = System.nanoTime();
         System.out.println("The answer to Problem 7 is: " + findPrimeToX(10001));
+        long end = System.nanoTime();
+        System.out.println("Program completed in " + (end - start) / 1000000 + " MS.");
      }
      
      static int findPrimeToX(int stop) {
